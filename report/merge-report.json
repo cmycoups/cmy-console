@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2022-11-21T13:50:56.139Z",
-    "end": "2022-11-21T13:55:46.030Z",
-    "duration": 289705,
+    "start": "2022-11-21T14:55:28.068Z",
+    "end": "2022-11-21T15:00:33.630Z",
+    "duration": 305368,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9b630b13-554b-4229-8b4d-3ff8e052b4d5",
+      "uuid": "6b867c6a-9163-418f-bc89-221dc3b1964f",
       "title": "",
       "fullFile": "cypress/e2e/pages/login.cy.js",
       "file": "cypress/e2e/pages/login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "aa9be2a1-09e6-40b1-bc89-6f05f28a0c92",
+          "uuid": "b6b67094-f3e1-4558-a683-323592d88824",
           "title": "The Login Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "successfully login and check menu",
               "fullTitle": "The Login Page successfully login and check menu",
               "timedOut": null,
-              "duration": 30395,
+              "duration": 30386,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:8089/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: ESOCKETTIMEDOUT\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:8089/__cypress/runner/cypress_runner.js:142216:82)\n    at visitFailedByErr (http://localhost:8089/__cypress/runner/cypress_runner.js:141504:12)\n    at <unknown> (http://localhost:8089/__cypress/runner/cypress_runner.js:142215:11)\n    at tryCatcher (http://localhost:8089/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (http://localhost:8089/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (http://localhost:8089/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (http://localhost:8089/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (http://localhost:8089/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (http://localhost:8089/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (http://localhost:8089/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:8089/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (http://localhost:8089/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/pages/login.cy.js:19:7)\n\nFrom Node.js Internals:\n  Error: ESOCKETTIMEDOUT\n      at ClientRequest.<anonymous> (/home/runner/.cache/Cypress/10.10.0/Cypress/resources/app/node_modules/@cypress/request/request.js:808:19)\n      at Object.onceWrapper (node:events:641:28)\n      at ClientRequest.emit (node:events:527:28)\n      at ClientRequest.emit (node:domain:475:12)\n      at Socket.emitRequestTimeout (node:_http_client:771:9)\n      at Object.onceWrapper (node:events:641:28)\n      at Socket.emit (node:events:539:35)\n      at Socket.emit (node:domain:475:12)\n      at Socket._onTimeout (node:net:516:8)\n      at listOnTimeout (node:internal/timers:559:17)\n      at processTimers (node:internal/timers:502:7)",
                 "diff": null
               },
-              "uuid": "941d0e4d-6120-4ac5-8764-96d55af62fd6",
-              "parentUUID": "aa9be2a1-09e6-40b1-bc89-6f05f28a0c92",
+              "uuid": "0e7f65d1-883d-442d-b278-e3480cc07a80",
+              "parentUUID": "b6b67094-f3e1-4558-a683-323592d88824",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "successfully error username and password",
               "fullTitle": "The Login Page successfully error username and password",
               "timedOut": null,
-              "duration": 259310,
+              "duration": 274982,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -69,22 +69,22 @@
               "context": null,
               "code": "cy.visit('/');\ncy.loginInput('username', `${Cypress.env('username')}1`).loginInput('password', `${Cypress.env('password')}1`).loginFormSubmit().get('.ant-notification').should('have.length', 1);",
               "err": {},
-              "uuid": "f5bc38f3-a9ff-4b2b-8705-06e3ab23c1e5",
-              "parentUUID": "aa9be2a1-09e6-40b1-bc89-6f05f28a0c92",
+              "uuid": "bf4b1017-c2fa-4451-ac9b-53b9f32eb24b",
+              "parentUUID": "b6b67094-f3e1-4558-a683-323592d88824",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f5bc38f3-a9ff-4b2b-8705-06e3ab23c1e5"
+            "bf4b1017-c2fa-4451-ac9b-53b9f32eb24b"
           ],
           "failures": [
-            "941d0e4d-6120-4ac5-8764-96d55af62fd6"
+            "0e7f65d1-883d-442d-b278-e3480cc07a80"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 289705,
+          "duration": 305368,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
